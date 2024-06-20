@@ -1,0 +1,116 @@
+h1{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.title{
+    text-align: center;
+}
+
+ .aboutme{
+  text-align: center;
+ }
+
+button{
+    border-radius: 15px;
+}
+
+.centerColumn{
+    float:left;
+    width: 20%;
+}
+
+.hangmanGame{
+    background: url("banffvertical.gif");
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: x-large;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menuButtons{
+    border: 0px;
+    background-color: lightgrey;
+    font-size: x-large;
+    text-align: center;
+    width: 24%;
+    
+}
+
+.menu{
+    background-color: lightgrey;
+    border-radius: 20px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    
+    border-radius: 20px;
+}
+
+.homeText{
+    float: right;
+    width: 75%;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.801);
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bigLetter{
+    font-size: larger;
+}
+
+.inTextButton{
+    border: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+
+.left40{
+    float: left;
+    width: 40%;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.right55{
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 20px;
+    float: right;
+    width: 55%;
+    border: 5px;
+    border-style: groove;
+    border-color: gold;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 1;
+}
+
+.catapultInterns{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.blankRow:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blankRow{
+    align-items: center;
+    display: flex;
+}
+

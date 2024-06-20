@@ -1,0 +1,42 @@
+.column{
+    float: left;
+    width: 50%;
+    text-align: center;
+
+}
+
+
+.start{
+    text-align: center;
+}
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+
+img{
+    border-radius: 15px;
+}
+
+video{
+    border-radius: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+button{
+    border-radius: 30px;
+    background-color: aqua;
+    font-size: large;
+}
+
