@@ -59,13 +59,13 @@ button{
 }
 
 .homeText{
-    float: right;
-    width: 75%;
+    width: 70%;
     color: white;
     background-color: rgba(128, 128, 128, 0.801);
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    float: right;
 }
 
 .bigLetter{
@@ -76,6 +76,8 @@ button{
     border: 0px;
     background-color: rgba(240, 248, 255, 0);
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
 }
 
 .left40{
@@ -113,4 +115,32 @@ button{
     align-items: center;
     display: flex;
 }
+
+.buttonImage{
+width: 100%;
+border-radius: 30px;
+}
+
+.columnImage{
+    float: left;
+    width: 60%
+}
+
+.column{
+    width: 32%;
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 20px;
+    margin: 2%;
+    border: 5px;
+    border-color: black;
+    border-style:outset;
+    padding: 15px;
+    text-align: center;
+    margin-top: 5%;
+    border-right: 5px solid black;
+    float: left;
+    overflow: hidden;
+
+}
+
 
