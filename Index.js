@@ -8,8 +8,29 @@ projectPage.style.display="none";
 let background=document.getElementById("mainBackground");
 background.style.backgroundImage="url('banff.jpg')";
 background.style.backgroundSize="cover"
+let adventureTimeProject=document.getElementById("adventureTimeProject");
+const typingElement = document.getElementById("typedText1");
+typingElement.style.visibility="hidden";
 
 
+
+
+
+adventureTimeProject.addEventListener("mouseover", function(){
+    typingElement.style.visibility="visible";
+    const text = " The first project Catapult had me work on was one of my favorites. Tasked with creating a short story with multiple options and outcomes, I put a twist on the prompt and created a quiz to help anyone who wants to play my favorite videogame choose which weapon they would use. This task used very little CSS, with the vast majority of the formatting taking place in JavaScript. For a quick explanation, all the content of the quiz is on the same page, with the use of divisions separating each question and the use of style.display commands to move through the quiz. This activity taught me a lot about JavaScript, specifically how to use addEventListener, display.style commands, inserting/customizing a video through JavaScript, and inserting/customizing an image through JavaScript";
+            
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    typingElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 50); // Adjust typing speed here (milliseconds)
+                }
+            }
+
+            type()},{once: true});
 
 
 let homeButton=document.getElementById("home");
