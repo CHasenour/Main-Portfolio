@@ -18,7 +18,9 @@ button{
 
 .centerColumn{
     float:left;
-    width: 20%;
+    width: 30%;
+    margin-left: 10%;
+    
 }
 
 .hangmanGame{
@@ -46,6 +48,7 @@ button{
 }
 
 .menu{
+    margin-top: 10px;
     background-color: lightgrey;
     border-radius: 20px;   
     display: flex;
@@ -59,13 +62,17 @@ button{
 }
 
 .homeText{
-    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 60%;
     color: white;
     background-color: rgba(128, 128, 128, 0.801);
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .bigLetter{
@@ -93,8 +100,8 @@ button{
     float: right;
     width: 55%;
     border: 5px;
-    border-style: groove;
-    border-color: gold;
+    border-style:outset;
+    border-color: black;
     padding-left: 15px;
     padding-right: 15px;
     flex: 1;
@@ -114,6 +121,7 @@ button{
 .blankRow{
     align-items: center;
     display: flex;
+    margin-top: 20px;
 }
 
 .buttonImage{
@@ -143,4 +151,244 @@ border-radius: 30px;
 
 }
 
+.rightHangman{
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 20px;
+    margin: 2%;
+    border: 5px;
+    border-color: black;
+    border-style:outset;
+    padding: 15px;
+    text-align: center;
+    margin-top: 5%;
+    border-right: 5px solid black;
+    float: left;
+    overflow: hidden; 
+    margin-left: 15%;  
+}
 
+.frontPage{
+     position: relative;
+}
+
+.animatedText{
+    font-size: xx-large;
+}
+
+body{
+    height: 100vh; 
+    margin: 5px;
+}
+
+.headShot{
+    position: absolute;
+    width: 23%;
+    float: left;
+    margin-top: 10vh;
+}
+
+.headShotImage{
+  width: 100%; 
+  border-radius: 20px; 
+  border: 5px;
+  border-style: groove;
+  border-color: darkblue;
+}
+
+.fakeText{
+    font-size: xx-large;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.801);
+    color: rgba(128, 128, 128, 0.801);
+    position: absolute;
+    animation: addBackground 2s ease-in-out forwards;
+
+}
+
+@keyframes addBackground{
+    0%{
+        opacity: 0;
+        transform: translate(60vw, 43.8vh)
+    }
+
+    90%{
+        opacity: 0;
+        transform: translate(60vw, 43.8vh)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(55vw, 43.8vh)
+    }
+}
+
+.animate1 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: moveLetterb 1s ease-in-out forwards;
+}
+
+@keyframes moveLetterb {
+
+    0%{
+        transform: translate(26.5vw, 54.5vh);
+    }
+
+    75%{
+        transform: translate(24.5vw, 42.5vh);
+    }
+
+    85%{
+        transform: translate(28vw, 40vh);
+    }
+    
+    100% {
+        transform: translate(60vw, 43.8vh);
+    }
+}
+
+.animate2 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: moveLettere 1.2s ease-in-out forwards;
+}
+
+@keyframes moveLettere {
+    
+    0%{
+        transform: translate(27vw, 59.5vh);
+    }
+
+    33%{
+        transform: translate(26.5vw, 54.5vh);
+    }
+
+    75%{
+        transform: translate(24.5vw, 42.5vh);
+    }
+
+    85%{
+        transform: translate(28vw, 40vh);
+    }
+    
+    100% {
+        transform: translate(59vw, 43.8vh);
+    }
+}
+
+.animate3 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: moveLetterl 1.4s ease-in-out forwards;
+}
+
+@keyframes moveLetterl {
+    0%{
+        transform: translate(27.5vw, 64.5vh);
+    }
+
+    50%{
+        transform: translate(27vw, 59.5vh);
+    }
+
+    80%{
+        transform: translate(24.5vw, 42.5vh);
+    }
+
+    90%{
+        transform: translate(28vw, 40vh);
+    }
+    
+    100% {
+        transform: translate(58.4vw, 43.8vh);
+    }
+}
+
+.animate4 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: moveLettera 1.6s ease-in-out forwards;
+}
+
+@keyframes moveLettera {
+
+    0%{
+        transform: translate(28vw, 69.5vh);
+    }
+
+    50%{
+        transform: translate(27.5vw, 64.5vh);
+    }
+
+    80%{
+        transform: translate(24.5vw, 42.5vh);
+    }
+
+    90%{
+        transform: translate(28vw, 40vh);
+    }
+    
+    100% {
+        transform: translate(57.4vw, 43.8vh);
+    }
+}
+
+.animate5 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: moveLetterc 1.8s ease-in-out forwards;
+}
+
+@keyframes moveLetterc {
+
+    0%{
+        transform: translate(28.5vw, 74.5vh);
+    }
+
+    50%{
+        transform: translate(28vw, 69.5vh);
+    }
+
+    80%{
+        transform: translate(24.5vw, 42.5vh);
+    }
+
+    90%{
+        transform: translate(28vw, 40vh);
+    }
+    
+    100% {
+        transform: translate(55.8vw, 43.8vh);
+    }
+}
+
+.animate6 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: moveLName 1.8s ease-in-out forwards;
+}
+
+@keyframes moveLName{
+    0%{
+        visibility: hidden;
+        transform: translate(63vw, 42.5vh);
+        
+    }
+
+
+    90%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: visible;
+        transform: translate(63vw, 43.8vh);
+    }
+}
