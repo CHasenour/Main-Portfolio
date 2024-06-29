@@ -10,7 +10,7 @@ let messages = document.getElementById("t");
 let lossProgress=document.getElementById("tr");
 let wordProgress=document.getElementById("tri");
 let button=document.getElementById("hangMan");
-let submittal=document.getElementById("guess");
+let submittal=document.getElementById("theGuess");
 
 let hangWord= possibleWords[parseInt(Math.random()*199)];
 console.log(hangWord);
@@ -20,10 +20,12 @@ let progress="";
     }
     let mistakes=0;
 let pastGuesses="";
-let hangMan="   |   ";
-submittal.addEventListener("submit", function makeAGuess(event){ 
-    event.preventDefault();
-    let g=document.querySelector("input").value;
+let hangMan="  |   ";
+submittal.addEventListener("keydown", function makeAGuess(event){ 
+    
+    if(event.key === 'Enter'){
+    let g=submittal.value;
+    console.log(g);
     document.getElementById("theGuess").value="";
      
     
@@ -56,10 +58,10 @@ submittal.addEventListener("submit", function makeAGuess(event){
         mistakes++;
     
     if(mistakes==1){
-        hangMan=hangMan + "\n   @   ";
+        hangMan=hangMan + "\n  @   ";
     }
     else if(mistakes==2){
-        hangMan=hangMan+ "\n" + "  /";
+        hangMan=hangMan+ "\n" + " /";
     }
     else if(mistakes==3){
         hangMan=hangMan+"|";
@@ -68,7 +70,7 @@ submittal.addEventListener("submit", function makeAGuess(event){
         hangMan=hangMan+"\\ ";
     }
     else if(mistakes==5){
-        hangMan=hangMan + "\n" + "  /";
+        hangMan=hangMan + "\n" + " /";
     }
     else if(mistakes==6){
         hangMan=hangMan + " \\ " + "\n";
@@ -88,7 +90,7 @@ submittal.addEventListener("submit", function makeAGuess(event){
     } 
     lossProgress.innerHTML=(hangMan +"");
     messages.innerHTML=("Past guesses: " + pastGuesses);
-    
+    }
 });
 
 
