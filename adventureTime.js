@@ -25,6 +25,8 @@ let sharpMeleeQ=document.getElementById("sharpMeleeQ");
 sharpMeleeQ.style.display="none";
 let GSvsL=document.getElementById("GSvsL");
 GSvsL.style.display="none";
+let mechanics=document.getElementById("mechanics")
+mechanics.style.display="none";
 
 let question1=document.getElementById("question1");
 
@@ -210,11 +212,18 @@ sharp.addEventListener("click", function(){
         GSvsLance.addEventListener("click", function(){
             sharpMeleeQ.style.display="none";
             GSvsL.style.display="inline"
+            question.innerHTML=("Choose risking it all for more damage or become a wall, attacking when openings appear.")
             let greatSword=document.getElementById("greatSword");
             let shoulder=document.createElement("img");
             shoulder.src="https://www.bing.com/th/id/OGC.325b0f19a9d31c05be92510993c9afed?pid=1.7&rurl=http%3a%2f%2fi1.kwejk.pl%2fk%2fobrazki%2f2013%2f03%2f8833825b0519820dc0e4c4dd1bb74e8b_gif.gif&ehk=%2ff%2f5OiTLmBlw7knA%2f0G5Mfg9gSMgXZ9Bw4kbYVPp6Ws%3d";
             shoulder.style.width=500;
             greatSword.appendChild(shoulder);
+            let lance=document.getElementById("lance");
+            let guard=document.createElement("img");
+            guard.src="Lance.gif"
+            guard.style.width=500
+            lance.appendChild(guard);
+
 let GS=document.getElementById("noDefense");
         GS.addEventListener("click", function(){
             GSvsL.style.display="none"
@@ -227,8 +236,43 @@ let GS=document.getElementById("noDefense");
             weapon.appendChild(fWeapon);
             fWeapon.style.width=1300;
         })
+
+        let L=document.getElementById("unbreakable")
+        L.addEventListener("click", function(){
+            GSvsL.style.display="none"
+            question.style.display="none";
+            finalAnswer.style.display="inline";
+            heading.innerHTML=("I Bet You Would Like...");
+            let fWeapon=document.createElement("img");
+            let weapon=document.getElementById("result");
+            fWeapon.src="Lance.avif";
+            weapon.appendChild(fWeapon);
+            fWeapon.style.width=1300;
+            let fweapon2=document.createElement("img");
+            fweapon2.src="sword_and_shield.jpg"
+            weapon.appendChild(fweapon2);
         })
-        
+        })
+      
+       let complicatedWeapons=document.getElementById("sharpMeleeA2")
+       complicatedWeapons.addEventListener("click", function(){
+        sharpMeleeQ.style.display="none"
+        mechanics.style.display="inline";
+        question.innerHTML=("Would you rather have large effects and/or explosions or have more focus on the weapon itself");
+        let onlyWeapon=document.getElementById("onlyWeapon");
+        let IGBrachy=document.createElement("img");
+        IGBrachy.src="IGBrachy.gif";
+        IGBrachy.style.width=500;
+        onlyWeapon.appendChild(IGBrachy);
+        let effects=document.getElementById("effects")
+        let SAFire=document.createElement("img");
+        SAFire.src="SAFire.webp";
+        SAFire.style.width=500;
+        effects.appendChild(SAFire);
+
+
+       }) 
+
     })
     })
 })
