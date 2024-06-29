@@ -1,17 +1,25 @@
 let mainPage=document.getElementById("Hangman");
 let mePage=document.getElementById("aboutMe");
 let contactPage=document.getElementById("contactPage");
-let projectPage=document.getElementById("projectPage")
+let projectPage=document.getElementById("projectPage");
+let codePage=document.getElementById("futurePage");
+codePage.style.display="none";
 mePage.style.display="none";
 contactPage.style.display="none";
 projectPage.style.display="none";
 let background=document.getElementById("mainBackground");
-background.style.backgroundImage="url('banff.jpg')";
-background.style.backgroundSize="cover"
+background.style.backgroundImage="url('mountainSide.jpg')";
+background.style.backgroundRepeat = "no-repeat";
+background.style.backgroundPosition = "center top";
+background.style.backgroundAttachment = "scroll";
+background.style.backgroundSize = "cover";
+background.style.backgroundAttachment= "scroll";
 let adventureTimeProject=document.getElementById("adventureTimeProject");
 const typingElement = document.getElementById("typedText1");
 typingElement.style.visibility="hidden";
-
+let HM=document.getElementById("HM");
+const typedText=document.getElementById("typedText2");
+typedText.style.visibility="hidden";
 
 
 
@@ -19,18 +27,28 @@ typingElement.style.visibility="hidden";
 adventureTimeProject.addEventListener("mouseover", function(){
     typingElement.style.visibility="visible";
     const text = " The first project Catapult had me work on was one of my favorites. Tasked with creating a short story with multiple options and outcomes, I put a twist on the prompt and created a quiz to help anyone who wants to play my favorite videogame choose which weapon they would use. This task used very little CSS, with the vast majority of the formatting taking place in JavaScript. For a quick explanation, all the content of the quiz is on the same page, with the use of divisions separating each question and the use of style.display commands to move through the quiz. This activity taught me a lot about JavaScript, specifically how to use addEventListener, display.style commands, inserting/customizing a video through JavaScript, and inserting/customizing an image through JavaScript";
-            
             let index = 0;
-
             function type() {
-                if (index < text.length) {
+               if (index < text.length) {
                     typingElement.textContent += text.charAt(index);
                     index++;
-                    setTimeout(type, 50); // Adjust typing speed here (milliseconds)
+                    setTimeout(type, 1); 
                 }
             }
-
             type()},{once: true});
+
+HM.addEventListener("mouseover", function(){
+    typedText.style.visibility="visible";
+    const text = "One of my favorite games is Hangman, and I decided I wanted to chanllenge myself and create the game. This required an extensive library of words, checking if a letter was in a word, and keeping track of mistakes. To ensure it wasn't too simplistic, I also kept track of guesses and gave the number of letters in the word.";
+    let index = 0;
+    function type() {
+        if (index < text.length) {
+            typedText.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 1); 
+            }
+        }
+    type()},{once: true});
 
 
 let homeButton=document.getElementById("home");
@@ -39,19 +57,18 @@ mainPage.style.display="inline";
 mePage.style.display="none";
 contactPage.style.display="none";
 projectPage.style.display="none";
-background.style.backgroundImage="url('banff.jpg')";
+background.style.backgroundImage="url('mountainSide.jpg')";
+background.style.backgroundAttachment= "scroll";
 })
 
 homeButton.addEventListener("mouseover", function(){
     homeButton.style.backgroundColor="blue";
-    homeButton.style.width="28%";
     homeButton.style.fontStyle="oblique";
     homeButton.style.color="white";
 })
 
 homeButton.addEventListener("mouseleave", function(){
     homeButton.style.backgroundColor="lightgrey";
-    homeButton.style.width="24%"
     homeButton.style.fontStyle="normal";
     homeButton.style.color="black"; 
 })
@@ -67,14 +84,12 @@ background.style.backgroundImage="url('banff.jpg')";
 
 meButton.addEventListener("mouseover", function(){
     meButton.style.backgroundColor="forestgreen";
-    meButton.style.width="28%"
     meButton.style.fontStyle="oblique"
     meButton.style.color="white";
 })
 
 meButton.addEventListener("mouseleave", function(){
     meButton.style.backgroundColor="lightgrey";
-    meButton.style.width="24%";
     meButton.style.fontStyle="normal";
     meButton.style.color="black";
 })
@@ -90,14 +105,12 @@ background.style.backgroundImage="url('banff.jpg')";
 
 contactButton.addEventListener("mouseover", function(){
     contactButton.style.backgroundColor="#8b0000";
-    contactButton.style.width="28%"
     contactButton.style.fontStyle="oblique"
     contactButton.style.color="white";
 })
 
 contactButton.addEventListener("mouseleave", function(){
     contactButton.style.backgroundColor="lightgrey";
-    contactButton.style.width="24%";
     contactButton.style.fontStyle="normal";
     contactButton.style.color="black";
 })
@@ -108,19 +121,18 @@ mainPage.style.display="none";
 mePage.style.display="none";
 contactPage.style.display="none";
 projectPage.style.display="inline";
-background.style.backgroundImage="url('metal.jpg')";
+background.style.backgroundImage="url('cliffside.jpg')";
+background.style.backgroundAttachment= "fixed";
 })
 
 projectButton.addEventListener("mouseover", function(){
     projectButton.style.backgroundColor="orange";
-    projectButton.style.width="28%"
     projectButton.style.fontStyle="oblique"
     projectButton.style.color="white";
 })
 
 projectButton.addEventListener("mouseleave", function(){
     projectButton.style.backgroundColor="lightgrey";
-    projectButton.style.width="24%";
     projectButton.style.fontStyle="normal";
     projectButton.style.color="black";
 })
@@ -128,15 +140,12 @@ projectButton.addEventListener("mouseleave", function(){
 let textMe=document.getElementById("textMe");
 textMe.addEventListener("mouseover", function(){
     meButton.style.backgroundColor="forestgreen";
-    meButton.style.width="28%"
     meButton.style.fontStyle="oblique"
     meButton.style.color="white";
-    background.style.backgroundImage="url('banff.jpg')";
 })
 
 textMe.addEventListener("mouseleave", function(){
     meButton.style.backgroundColor="lightgrey";
-    meButton.style.width="24%";
     meButton.style.fontStyle="normal";
     meButton.style.color="black";
 })
@@ -144,14 +153,12 @@ textMe.addEventListener("mouseleave", function(){
 let textProject=document.getElementById("textProject")
 textProject.addEventListener("mouseover", function(){
     projectButton.style.backgroundColor="orange";
-    projectButton.style.width="28%"
     projectButton.style.fontStyle="oblique"
     projectButton.style.color="white";
 })
 
 textProject.addEventListener("mouseleave", function(){
     projectButton.style.backgroundColor="lightgrey";
-    projectButton.style.width="24%";
     projectButton.style.fontStyle="normal";
     projectButton.style.color="black";
 })
@@ -159,15 +166,34 @@ textProject.addEventListener("mouseleave", function(){
 let textContact=document.getElementById("textContact");
 textContact.addEventListener("mouseover", function(){
     contactButton.style.backgroundColor="#8b0000";
-    contactButton.style.width="28%"
     contactButton.style.fontStyle="oblique"
     contactButton.style.color="white";
 })
 
 textContact.addEventListener("mouseleave", function(){
     contactButton.style.backgroundColor="lightgrey";
-    contactButton.style.width="24%";
     contactButton.style.fontStyle="normal";
     contactButton.style.color="black";
 })
 
+let futureButton=document.getElementById("future");
+futureButton.addEventListener("click", function(){
+mainPage.style.display="none";
+mePage.style.display="none";
+contactPage.style.display="none";
+projectPage.style.display="none";
+futurePage.style.display="inline"
+background.style.backgroundImage="url('future.jpg')";
+})
+
+futureButton.addEventListener("mouseover", function(){
+    futureButton.style.backgroundColor="gold";
+    futureButton.style.fontStyle="oblique";
+    futureButton.style.color="white";
+})
+
+futureButton.addEventListener("mouseleave", function(){
+    futureButton.style.backgroundColor="lightgrey";
+    futureButton.style.fontStyle="normal";
+    futureButton.style.color="black"; 
+})
