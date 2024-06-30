@@ -101,6 +101,7 @@ mePage.style.display="none";
 contactPage.style.display="inline";
 projectPage.style.display="none";
 background.style.backgroundImage="url('banff.jpg')";
+background.style.backgroundAttachment="fixed"
 })
 
 contactButton.addEventListener("mouseover", function(){
