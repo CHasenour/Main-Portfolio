@@ -28,7 +28,7 @@ submittal.addEventListener("keydown", function makeAGuess(event){
     console.log(g);
     document.getElementById("theGuess").value="";
      
-    
+    // j
     pastGuesses=pastGuesses + g + " ";
     let temp=progress;
     console.log(progress)
