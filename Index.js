@@ -79,7 +79,8 @@ mainPage.style.display="none";
 mePage.style.display="inline";
 contactPage.style.display="none";
 projectPage.style.display="none";
-background.style.backgroundImage="url('banff.jpg')";
+background.style.backgroundImage="url('stone.jpg')";
+background.style.backgroundAttachment="fixed";
 })
 
 meButton.addEventListener("mouseover", function(){
@@ -198,3 +199,60 @@ futureButton.addEventListener("mouseleave", function(){
     futureButton.style.fontStyle="normal";
     futureButton.style.color="black"; 
 })
+
+let backButton=document.getElementById("backButton");
+backButton.addEventListener("mouseover", function(){
+    backButton.style.backgroundColor="royalblue";
+    backButton.style.borderColor="black"
+})
+
+backButton.addEventListener("mouseleave", function(){
+    backButton.style.backgroundColor="white";
+    backButton.style.borderColor="blue";
+})
+
+let forwardButton=document.getElementById("forwardButton");
+forwardButton.addEventListener("mouseover", function(){
+    forwardButton.style.backgroundColor="royalblue";
+    forwardButton.style.borderColor="black"
+})
+
+forwardButton.addEventListener("mouseleave", function(){
+    forwardButton.style.backgroundColor="white";
+    forwardButton.style.borderColor="blue";
+})
+
+let carousel1=document.getElementById("carousel1");
+let carousel2=document.getElementById("carousel2");
+carousel2.style.display="none";
+let carousel3=document.getElementById("carousel3");
+carousel3.style.display="none";
+let carousel4=document.getElementById("carousel4");
+carousel4.style.display="none";
+let x=0;
+
+let carousel=[carousel1, carousel2, carousel3, carousel4]
+
+forwardButton.addEventListener("click", function(){
+carousel[x].style.display="none"
+if(x+1<carousel.length){
+    carousel[x+1].style.display="inline";
+    x++;
+}
+else{
+    carousel[0].style.display="inline"
+    x=0;
+}
+})
+
+backButton.addEventListener("click", function(){
+    carousel[x].style.display="none"
+    if(x-1>-1){
+        carousel[x-1].style.display="inline";
+        x--;
+    }
+    else{
+        carousel[carousel.length-1].style.display="inline"
+        x=carousel.length-1;
+    }
+    })
