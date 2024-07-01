@@ -39,9 +39,14 @@
         </div>
 
         <div id="aboutMe">
-
-
-
+            <div class="blankRow2">
+                <div class="back"><button class="backButton" id="backButton">&lt</button></div>
+                <div class="centerpiece" id="carousel1"><img class="centerpieceImage" src="betterSig.jpg" alt="Signature School"></div>
+                <div class="centerpiece" id="carousel2"><img class="centerpieceImage" src="IMG_0099.jpg" alt="Hunting"></div>
+                <div class="centerpiece" id="carousel3"><img src="IMG_1477.JPG" alt="Rock Climbing Selfie" class="centerpieceImage"></div>
+                <div class="centerpiece" id="carousel4"><img src="IMG_3424.jpg" alt="Community Service" class="centerpieceImage"></div>
+                <div class="forward"><button id="forwardButton" class="forwardButton">&gt</button></div>
+            </div>
         </div>
 
         <div id="projectPage">
@@ -104,14 +109,17 @@
 
                 <form id="contactForm" method="POST" action="emailForm.php">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                
+                    <br>
+                    <input type="text" id="name" name="name" class="contactInputs" required>
+                <br>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                
+                    <br>
+                    <input type="email" class="contactInputs" id="email" name="email" required>
+                <br>
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                
+                    <br>
+                    <textarea id="message" class="contactInputs" name="message" required></textarea>
+                <br>
                     <button type="submit">Send</button>
                 </form>
             </div>
