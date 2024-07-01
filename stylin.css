@@ -208,10 +208,11 @@ body{
 
 .contactInputs{
     background-color: lightcyan;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 3px;
     border-style: ridge;
     border-color: darkblue;
+    width: 90%;
 }
 
 .back{
@@ -281,6 +282,21 @@ body{
     position: absolute;
     animation: addBackground 2s ease-in-out forwards;
 
+}
+
+.fifty{
+    width: 50%;
+    text-align: center;
+}
+
+.contactButton{
+    font-size: x-large;
+    background-color: white;
+    border: 0px;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-right: 3%;
+    padding-bottom: 1%;
 }
 
 @keyframes addBackground{
