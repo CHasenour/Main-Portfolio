@@ -23,7 +23,7 @@ typedText.style.visibility="hidden";
 let project3=document.getElementById("project3");
 const typedText3=document.getElementById("typedText3");
 typedText3.style.visibility="hidden"
-
+let carouselTitle=document.getElementById("carouselTitle");
 
 
 adventureTimeProject.addEventListener("mouseover", function(){
@@ -247,7 +247,7 @@ carousel4.style.display="none";
 let x=0;
 
 let carousel=[carousel1, carousel2, carousel3, carousel4]
-
+let carouselTitles=["I recieved PSAT commended in front ofmy school, Signature School", "A favorite hobby and pastime, hunting is a stress relieving activity", "Fitness is very important to me, making Rock Climbing the perfect sport to improve physically", "I enjoy helping my community, especially children through organizations like Sleep In Heavenly Peace"]
 forwardButton.addEventListener("click", function(){
 carousel[x].style.display="none"
 if(x+1<carousel.length){
@@ -258,7 +258,17 @@ else{
     carousel[0].style.display="inline"
     x=0;
 }
-})
+const text = carouselTitles[x];
+            let index = 0;
+            function type() {
+               if (index < text.length) {
+                    carouselTitles[x].textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 1); 
+                }
+            }
+            type()},{once: true});
+
 
 backButton.addEventListener("click", function(){
     carousel[x].style.display="none"
@@ -270,7 +280,19 @@ backButton.addEventListener("click", function(){
         carousel[carousel.length-1].style.display="inline"
         x=carousel.length-1;
     }
-    })
+
+    
+    const text = carouselTitles[x];
+            let index = 0;
+            function type() {
+               if (index < text.length) {
+                    carouselTitles[x].textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 1); 
+                }
+            }
+            type()},{once: true});
+    
 
 
 let send=document.getElementById("contactButton")
