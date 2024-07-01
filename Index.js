@@ -20,7 +20,9 @@ typingElement.style.visibility="hidden";
 let HM=document.getElementById("HM");
 const typedText=document.getElementById("typedText2");
 typedText.style.visibility="hidden";
-
+let project3=document.getElementById("project3");
+const typedText3=document.getElementById("typedText3");
+typedText3.style.visibility="hidden"
 
 
 
@@ -36,6 +38,19 @@ adventureTimeProject.addEventListener("mouseover", function(){
                 }
             }
             type()},{once: true});
+
+            project3.addEventListener("mouseover", function(){
+                typedText3.style.visibility="visible";
+                const text = "My first project at Catapult, this taught me a lot of the basics and allowed me to explore formating. Nothing fancy, but a good example of how far I've improved upon.";
+                        let index = 0;
+                        function type() {
+                           if (index < text.length) {
+                                typedText3.textContent += text.charAt(index);
+                                index++;
+                                setTimeout(type, 1); 
+                            }
+                        }
+                        type()},{once: true});
 
 HM.addEventListener("mouseover", function(){
     typedText.style.visibility="visible";
@@ -79,7 +94,7 @@ mainPage.style.display="none";
 mePage.style.display="inline";
 contactPage.style.display="none";
 projectPage.style.display="none";
-background.style.backgroundImage="url('stone.jpg')";
+background.style.backgroundImage="url('cliffside.jpg')";
 background.style.backgroundAttachment="fixed";
 })
 
@@ -123,7 +138,7 @@ mainPage.style.display="none";
 mePage.style.display="none";
 contactPage.style.display="none";
 projectPage.style.display="inline";
-background.style.backgroundImage="url('cliffside.jpg')";
+background.style.backgroundImage="url('stone.jpg')";
 background.style.backgroundAttachment= "fixed";
 })
 
