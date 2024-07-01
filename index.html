@@ -108,19 +108,31 @@
                 <h2 style="text-align: center;">Get in Touch!</h2>
 
                 <form id="contactForm" method="POST" action="https://formspree.io/f/mgvweoao">
-                    <label for="name">Name</label>
+                    <div class="blankRow">
+                    <div class="fifty"><label for="name">Name and Affiliation</label>
                     <br>
                     <input type="text" id="name" name="name" class="contactInputs" required>
-                <br>
+                </div>
+                <div class="fifty">
                     <label for="email">Email</label>
                     <br>
                     <input type="email" class="contactInputs" id="email" name="email" required>
+                </div>
+                </div>
                 <br>
-                    <label for="message">Message</label>
+                <br>
+                <br>
+                <br>
+                    <label for="message">What can I help you with?</label>
                     <br>
                     <textarea id="message" class="contactInputs" name="message" required></textarea>
                 <br>
-                    <button type="submit">Send</button>
+                <br>
+                <br>
+                <br>
+                    <button id="contactButton" type="submit" class="contactButton">Send</button>
+                    <br>
+                    <br>
                 </form>
             </div>
 
