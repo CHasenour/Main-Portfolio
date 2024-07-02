@@ -239,7 +239,7 @@ body{
     border-style: outset;
     border-color: blue;
     background-color: white;
-    margin-top: 47.5vh;
+    margin-top: 30vh;
 }
 
 .backButton{
@@ -249,7 +249,7 @@ body{
     border-style: outset;
     border-color: blue;
     background-color: white;
-    margin-top: 47.5vh;
+    margin-top: 30vh;
 }
 
 .centerpiece{
@@ -259,24 +259,34 @@ body{
 }
 
 .carouselTitle{
-    color: orange;
-    background-color: rgba(255, 255, 255, 0.836);
+    width:fit-content;
+    
+    bottom: 0;
+   margin-top: 15vh;
+}
+
+.carouselTitleWords{
+    background-color: rgb(109, 109, 109);
     text-align: center;
+    color: darkorange;
+    flex: 1;
+    border-radius: 5px;
 }
 
 .centerpieceImage{
-    margin-top: 10vh;
+    margin-top: 1vh;
     width: 100%;
     border-radius: 20px;
     border: 5px;
-    border-style:ridge;
+    border-style: ridge;
     border-color: black;
 }
 
 .blankRow2{
     
+    justify-content: center;
     display: flex;
-    margin-top: 20vh;
+    
 }
 
 .fakeText{
