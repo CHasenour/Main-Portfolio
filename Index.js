@@ -171,12 +171,32 @@ textMe.addEventListener("mouseleave", function(){
     meButton.style.color="black";
 })
 
+textMe.addEventListener("click", function(){
+    mainPage.style.display="none";
+    mePage.style.display="inline";
+    contactPage.style.display="none";
+    projectPage.style.display="none";
+    futurePage.style.display="none"; 
+    background.style.backgroundImage="url('cliffside.jpg')";
+    background.style.backgroundAttachment="fixed";
+    })
+
 let textProject=document.getElementById("textProject")
 textProject.addEventListener("mouseover", function(){
     projectButton.style.backgroundColor="orange";
     projectButton.style.fontStyle="oblique"
     projectButton.style.color="white";
 })
+
+textProject.addEventListener("click", function(){
+    mainPage.style.display="none";
+    mePage.style.display="none";
+    contactPage.style.display="none";
+    projectPage.style.display="inline";
+    futurePage.style.display="none";
+    background.style.backgroundImage="url('stone.jpg')";
+    background.style.backgroundAttachment= "fixed";
+    })
 
 textProject.addEventListener("mouseleave", function(){
     projectButton.style.backgroundColor="lightgrey";
@@ -196,6 +216,16 @@ textContact.addEventListener("mouseleave", function(){
     contactButton.style.fontStyle="normal";
     contactButton.style.color="black";
 })
+
+textContact.addEventListener("click", function(){
+    mainPage.style.display="none";
+    mePage.style.display="none";
+    contactPage.style.display="inline";
+    projectPage.style.display="none";
+    futurePage.style.display="none";
+    background.style.backgroundImage="url('banff.jpg')";
+    background.style.backgroundAttachment="fixed"
+    })
 
 let futureButton=document.getElementById("future");
 futureButton.addEventListener("click", function(){
