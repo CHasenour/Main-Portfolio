@@ -28,7 +28,7 @@ let carouselTitle=document.getElementById("carouselTitle");
 
 adventureTimeProject.addEventListener("mouseover", function(){
     typingElement.style.visibility="visible";
-    const text = " The first project Catapult had me work on was one of my favorites. Tasked with creating a short story with multiple options and outcomes, I put a twist on the prompt and created a quiz to help anyone who wants to play my favorite videogame choose which weapon they would use. This task used very little CSS, with the vast majority of the formatting taking place in JavaScript. For a quick explanation, all the content of the quiz is on the same page, with the use of divisions separating each question and the use of style.display commands to move through the quiz. This activity taught me a lot about JavaScript, specifically how to use addEventListener, display.style commands, inserting/customizing a video through JavaScript, and inserting/customizing an image through JavaScript.";
+    const text = " The first project Catapult had me work on was one of my favorites. Tasked with creating a short story with multiple options and outcomes, I put a twist on the prompt and created a quiz to help anyone who wants to play my favorite videogame choose which weapon they would use. This task used very little CSS, with the vast majority of the formatting taking place in JavaScript. For a quick explanation, all the content of the quiz is on the same page, with the use of divisions separating each question and the use of style.display commands to move through the quiz. This activity taught me a lot about JavaScript, specifically how to use addEventListener, display.style commands, inserting/customizing a video through JavaScript, and inserting/customizing an image through JavaScript";
             let index = 0;
             function type() {
                if (index < text.length) {
@@ -245,19 +245,18 @@ carousel3.style.display="none";
 let carousel4=document.getElementById("carousel4");
 carousel4.style.display="none";
 let x=0;
+
+let carousel=[carousel1, carousel2, carousel3, carousel4]
 let cT1=document.getElementById("carouselTitle1");
 let cT2=document.getElementById("carouselTitle2");
 cT2.style.display="none"
 let cT3=document.getElementById("carouselTitle3");
 cT3.style.display="none"
-let cT4=document.getElementById("carouselTitle4");
+let cT4=document.getElementById("carouselTitle4")
 cT4.style.display="none"
-
-let carousel=[carousel1, carousel2, carousel3, carousel4]
-let carouselTitles=[cT1, cT2, cT3, cT4];
+let carouselTitles=[cT1, cT2, cT3 ,cT4 ]
 forwardButton.addEventListener("click", function(){
 carousel[x].style.display="none"
-carouselTitles[x].style.display="none"
 if(x+1<carousel.length){
     carousel[x+1].style.display="inline";
     carouselTitles[x+1].style.display="inline";
