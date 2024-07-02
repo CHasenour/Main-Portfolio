@@ -2,8 +2,8 @@ let mainPage=document.getElementById("Hangman");
 let mePage=document.getElementById("aboutMe");
 let contactPage=document.getElementById("contactPage");
 let projectPage=document.getElementById("projectPage");
-let codePage=document.getElementById("futurePage");
-codePage.style.display="none";
+let futurePage=document.getElementById("futurePage");
+futurePage.style.display="none";
 mePage.style.display="none";
 contactPage.style.display="none";
 projectPage.style.display="none";
@@ -72,6 +72,7 @@ mainPage.style.display="inline";
 mePage.style.display="none";
 contactPage.style.display="none";
 projectPage.style.display="none";
+futurePage.style.display="none";
 background.style.backgroundImage="url('mountainSide.jpg')";
 background.style.backgroundAttachment= "scroll";
 })
@@ -94,6 +95,7 @@ mainPage.style.display="none";
 mePage.style.display="inline";
 contactPage.style.display="none";
 projectPage.style.display="none";
+futurePage.style.display="none"; 
 background.style.backgroundImage="url('cliffside.jpg')";
 background.style.backgroundAttachment="fixed";
 })
@@ -116,6 +118,7 @@ mainPage.style.display="none";
 mePage.style.display="none";
 contactPage.style.display="inline";
 projectPage.style.display="none";
+futurePage.style.display="none";
 background.style.backgroundImage="url('banff.jpg')";
 background.style.backgroundAttachment="fixed"
 })
@@ -138,6 +141,7 @@ mainPage.style.display="none";
 mePage.style.display="none";
 contactPage.style.display="none";
 projectPage.style.display="inline";
+futurePage.style.display="none";
 background.style.backgroundImage="url('stone.jpg')";
 background.style.backgroundAttachment= "fixed";
 })

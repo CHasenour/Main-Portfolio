@@ -266,9 +266,9 @@ body{
 }
 
 .carouselTitleWords{
-    background-color: rgb(109, 109, 109);
+    background-color: rgb(165, 165, 165);
     text-align: center;
-    color: darkorange;
+    color: darkblue;
     flex: 1;
     border-radius: 5px;
 }
@@ -302,6 +302,53 @@ body{
 .fifty{
     width: 50%;
     text-align: center;
+}
+
+.window{
+    width: 50vw;
+    margin-top: 20vh;
+    margin-left: 25vw;
+    overflow-x:scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: inline-block;
+    border-radius: 40px;
+}
+
+.sideScroll{
+    display: inline-flex;
+    
+   
+    
+}
+
+.cardText{
+    height: 25vh;
+    font-size: x-large;
+    
+    width: 20vw;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.card{
+    width: fit-content;
+   
+}
+
+.cardImage{
+    height: 25vh;
+    border-radius: 30px;
+}
+
+.timeline{
+    background-color: black;
+    width: 160vw;
+    height: 1vh;
+    overflow: hidden;
+    border-color: black;
 }
 
 .contactButton{
