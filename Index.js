@@ -257,6 +257,7 @@ cT4.style.display="none"
 let carouselTitles=[cT1, cT2, cT3 ,cT4 ]
 forwardButton.addEventListener("click", function(){
 carousel[x].style.display="none"
+carouselTitles[x].style.display="none"
 if(x+1<carousel.length){
     carousel[x+1].style.display="inline";
     carouselTitles[x+1].style.display="inline";
